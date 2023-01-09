@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  margin-left: 2%;
+  border-radius: 8px;
+  -webkit-box-align: right;
+  -ms-flex-align: right;
+  align-items: right;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+.container .warn-text {
+  font-size: 12px;
+  color: rebeccapurple;
+  line-height: 12px;
+}/*# sourceMappingURL=04_混入.css.map */

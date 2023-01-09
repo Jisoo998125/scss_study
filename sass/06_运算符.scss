@@ -1,0 +1,34 @@
+$theme:2;
+$theme2:3;
+$width:100;
+$height:200;
+$last:false;
+.container {
+    @if $theme==1 {
+        background-color: red;
+    }
+    @else {
+        background-color: green;
+    }
+    @if $theme2>=4 {
+        color: red;
+    }
+    @else {
+        color: black;
+    }
+}
+
+div {
+    @if $width>50 and $height<300 {
+        font-size: 16px;
+    }
+    @else {
+        font-size: 20px;
+    }
+    @if not $last {
+        border-color: red;
+    }
+    @else {
+        border-color: blue;
+    }
+}

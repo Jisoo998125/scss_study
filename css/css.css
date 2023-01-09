@@ -1,0 +1,23 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container a {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.container a:hover {
+  text-decoration: underline;
+  color: #f00;
+}
+.container .top {
+  border: 1px solid #ccc;
+}
+.container .top__left {
+  float: left;
+  width: 200px;
+}
+.container .head {
+  color: red;
+}/*# sourceMappingURL=css.css.map */

@@ -1,0 +1,14 @@
+p {
+  font-size: 15px;
+}
+
+.container {
+  background-color: green;
+  content: null;
+  color: #fff;
+  background-color: red;
+}
+
+.container {
+  border-color: #333;
+}/*# sourceMappingURL=02_scss变量详解.css.map */

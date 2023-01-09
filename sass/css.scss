@@ -1,0 +1,25 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    a {
+        color: #333;
+        font: {
+            size: 14px;
+            weight: bold;
+        }
+        &:hover {
+            text-decoration: underline;
+            color: #f00;
+        }
+    }
+    .top {
+        border: 1px solid #ccc;
+        &__left {
+            float: left;
+            width: 200px;
+        }
+    }
+    .head {
+        color: red;
+    }
+}

@@ -1,0 +1,41 @@
+// $color: red;
+$border-color:#f2f2f2;
+$border_width:1px;
+$color8:#000000;
+.container {
+    $font_size: 14px;
+    $font_size1: 15px !global;
+    // color: $color;
+}
+
+p {
+    font-size: $font_size1;
+}
+
+$layer-index:10;
+$border-width:3px;
+$font-base-family:"Open Sans""sans-serif""Helvetica Neue";
+$top-bg-color:rgba(255, 255, 255, 0);
+$block-base-padding:6px 10px 6px 10px;
+$blank-mode:false;
+$var:null; //值null是其类型的唯一值。它表示缺少值，通常由函数返回以指示缺少结果
+$color-map:(color1:#fff, color2:red, color3:#fff);
+$fonts: (serif: "helvetica");
+.container {
+    @if $blank-mode {
+        background-color: red;
+    }
+    @else {
+        background-color: green;
+    }
+    content: type-of($var);
+    color: map-get($color-map, color1);
+    // 如果列表中包含空值，则生成css中将忽略该空值
+    background-color: map-get($color-map, color2);
+}
+
+$color:#333;
+$color:#666 !default;
+.container {
+    border-color: $color;
+}
