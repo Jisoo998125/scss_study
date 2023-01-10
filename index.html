@@ -11,6 +11,33 @@
 
 <body>
     <div class="container"></div>
+    <button id="btn">1111</button>
+
+    <script>
+        function debounce(fn, delay) {
+            let timer
+            return function(...args) {
+                if (timer) {
+                    clearTimeout(timer)
+                }
+                timer = setTimeout(() => {
+                    fn.apply(this, args)
+                }, delay)
+            }
+        }
+        var res1 = debounce(function(this) {
+            $(this).children("ul").slideDown(300);
+        }, 500)
+        var res2 = debounce(function(this) {
+            $(this).children("ul").slideUp(300);
+        }, 500)
+        $('.nav-list1 li').mouseenter(function() {
+            res1(this);
+        })
+        $('.nav-list1 li').mouseleave(function() {
+            res2(this);
+        })
+    </script>
 </body>
 
 </html>
