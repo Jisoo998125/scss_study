@@ -1,0 +1,30 @@
+@charset "UTF-8";
+p {
+  background-color: #F00;
+  z-index: 6;
+}
+p::after {
+  content: "这是里面的内容";
+}
+
+p {
+  z-index: 15;
+  z-index: 6;
+  z-index: 8;
+  opacity: 0.457561333;
+}
+
+p {
+  z-index: 3;
+  z-index: 2;
+  padding: 20px 30px 40px 20px;
+  color: blue;
+}
+
+p {
+  font-size: 18px;
+  padding-right: 20px;
+}
+p:after {
+  content: '"small", "normal", "large" 10px, 20px, 10px, 30px';
+}/*# sourceMappingURL=09_sass常见函数的基本使用.css.map */

@@ -1,0 +1,33 @@
+p {
+    &::after {
+        content: quote(这是里面的内容);
+    }
+    background-color: unquote("#F00");
+    z-index: str-length($string: "scss学习");
+}
+
+p {
+    z-index: abs($number: -15);
+    z-index: ceil($number: 5.8);
+    z-index: max(5, 1, 6, 8, 3);
+    opacity: random();
+}
+
+p {
+    z-index: length($list: 12px 3px 4px);
+    z-index: index($list: a b c, $value: b);
+    padding: append($list: 20px 30px 40px, $val: 20px, $separator: "auto");
+    color: nth($list: red blue green, $n: 2);
+}
+
+$font-size:("small":12px, "normal":18px, "large":24px);
+$padding:(top:10px, right:20px, bottom:10px, left:30px);
+p {
+    font-size: map-get($map: $font-size, $key: "normal");
+    @if map-has-key($map: $padding, $key: "right") {
+        padding-right: map-get($map: $padding, $key: "right");
+    }
+    &:after {
+        content: map-keys($map: $font-size) + " "+ map-values($map: $padding) +"";
+    }
+}
